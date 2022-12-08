@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Klaudia's Caves</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Zilla+Slab:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+          <div class="contactInfo">
+            <a href="#" class="contact">+30 XXXXXXXXX4</a>
+            <a href="#" class="contact">klaudias_caves_info@example.com</a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navigationMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+
+              <li class="nav-item rooms" id="roomsSectionMenu">
+                <a href="#rooms" class="nav-link">Rooms</a>
+                <div class="dropdownItem">
+                  <a
+                    href="#astralRoom"
+                    class="dropdownItemElement rounded-pill astralRoom"
+                    >Astral Cave Suite</a
+                  >
+                  <a
+                    href="#elysiumRoom"
+                    class="dropdownItemElement rounded-pill elysiumRoom"
+                    >Elysium Cave Suite</a
+                  >
+                  <a
+                    href="#omniRoom"
+                    class="dropdownItemElement rounded-pill omniRoom"
+                    >Omni Cave Suite</a
+                  >
+                  <a
+                    href="#divineRoom"
+                    class="dropdownItemElement rounded-pill divineRoom"
+                    >Divine Cave Suite</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="#restaurant" class="nav-link">Restaurant</a>
+              </li>
+
+              <li class="nav-item" id="facillitiesSectionMenu">
+                <a href="#facillities" class="nav-link">Facillities</a>
+                <div class="dropdownItemFac">
+                  <a
+                    href="#generalFac"
+                    class="dropdownItemElement rounded-pill generalFac"
+                    >General</a
+                  >
+
+                  <a
+                    href="#receptionFac"
+                    class="dropdownItemElement rounded-pill receptionFac"
+                    >Reception services</a
+                  >
+
+                  <a
+                    href="#foodDrinkFac"
+                    class="dropdownItemElement rounded-pill foodDrinkFac"
+                    >Food & Drink</a
+                  >
+
+                  <a
+                    href="#wellnessFac"
+                    class="dropdownItemElement rounded-pill wellnessFac"
+                    >Wellness</a
+                  >
+
+                  <a
+                    href="#cleaningFac"
+                    class="dropdownItemElement rounded-pill cleaningFac"
+                    >Cleaning services</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="#faq" class="nav-link">FAQs</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="login/login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="text-center coverSection">
+        <div class="coverSectionContainer">
+          <h1>Hotel Klaudia's Caves</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ullam
+            beatae dolor consequatur dicta cum repellat vero dolores officiis
+            dignissimos delectus nemo deleniti, voluptate error?
+          </p>
+          <a href="booking/booking.html" class="btn rounded-pill"
+            >book a room</a
+          >
+
+          <div class="coverSectionIcons">
+            <div class="icon">
+              <a href="https://www.booking.com/hotel/gr/divine-cave-experience.en-gb.html?aid=357028&label=bin859jc-1FCAsoXEIWZGl2aW5lLWNhdmUtZXhwZXJpZW5jZUgzWANowAGIAQGYAQm4ARfIAQzYAQHoAQH4AQyIAgGoAgO4AsXFrpgGwAIB0gIkM2RkZDIyZGYtOGQ1Zi00NWNiLWJkMjItYTUxMGIyNjkzMmVk2AIG4AIB&sid=c195ae3d60dd5f264cfe318841684d73&dest_id=7247883;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1668703886;srpvid=7b0776863f470253;type=total;ucfs=1&#hotelTmpl"
+               class="bookingAppSvg"
+               >
+               <h2>B.</h2>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a href="https://www.facebook.com/divinecaveexperiencesantorini/"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a href="https://www.instagram.com/divinecaveexperience/"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a href="https://www.divinesuites.com/"
+               class="bookingAppSvg"
+               >
+               <h2>D</h2>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutSection">
+        <div class="container">
+          <div
+            class="d-md-flex justify-content-between align-items-center aboutSectionContent"
+          >
+            <h3 class="mb-3 mb-md-0">Step into Kaludia's Caves</h3>
+
+            <!-- <div class="aboutSectionContentDecor1"></div>
+
+            <div class="aboutSectionContentDecor2"></div> -->
+
+            <div class="aboutSectionContentText">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Adipisci aliquid aspernatur earum blanditiis quia asperiores
+                eveniet doloribus molestias, at repellendus assumenda placeat
+                mollitia consequuntur. Enim, blanditiis? Accusantium mollitia
+                magni voluptate nesciunt nihil optio alias, earum atque ratione
+                dignissimos repellat sint error, facere iure non impedit quasi,
+                ut ipsum natus consequatur!
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis corporis ullam id dolores ex dolorem iste odit beatae
+                quod harum unde aut, expedita quae sed quia qui nesciunt
+                perferendis? Molestias enim maiores quia libero non nisi, quas
+                nulla rerum quibusdam similique dolor a, possimus corporis
+                architecto nihil aliquam error iusto consequatur. Eaque eum
+                explicabo voluptates veritatis officiis fuga dolores fugit
+                voluptas repellat? Aut non debitis hic perspiciatis laboriosam,
+                possimus praesentium blanditiis est autem voluptate ratione enim
+                rem rerum minus tempore facilis odit quasi, quo fugit deleniti,
+                quidem saepe temporibus eum! Sequi temporibus voluptatem id
+                reiciendis? Explicabo vitae repudiandae similique iure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+
+                <div class="card bg-success text-light">
+                  <div class="card-body text-center">
+                    <h3 class="card-tittle">Recenzia 1</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </p>
+                    <a href="" class="btn btn-dark">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="card bg-warning text-light">
+                    <div class="card-body text-center">
+                      <h3 class="card-tittle">Recenzia 2</h3>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                      </p>
+                      <a href="" class="btn btn-dark">Read more</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card bg-danger text-light">
+                  <div class="card-body text-center">
+                    <h3 class="card-tittle">Recenzia 3</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </p>
+                    <a href="" class="btn btn-dark">Read more</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section> -->
+
+      <section id="rooms" class="p-5">
+        <h2>Discover our suites</h2>
+
+        <div class="roomContainer">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5 text-light roomContent">
+              <h3 id="astralRoom">
+                Astral Cave Suite with Private Jacuzzi
+                <span>~Caldera View~</span>
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                corrupti cumque ab saepe recusandae voluptatum harum tenetur
+                mollitia beatae ratione, rerum illo odit delectus impedit
+                consequuntur molestias magni nihil omnis dolorum dolor fugiat
+                ea? Cupiditate aperiam sint voluptate quam at!
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Eveniet, numquam exercitationem! Quibusdam quas voluptates ipsa
+                totam error, quasi nam alias maiores deserunt placeat nulla
+                consectetur!
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                sint explicabo asperiores impedit harum deserunt dolore.
+                Excepturi expedita ipsa neque doloribus deserunt consequatur ab
+                iusto.
+              </p>
+
+              <a href="booking/booking.html" class="btn rounded-pill"
+                >Book Now</a
+              >
+            </div>
+
+            <div id="astralCarouselSlide" class="carousel slide col-md" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/astral_room.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/astral_room2.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/astral_room_bathroom.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/astral_room_jacuzzi.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="roomContainer boxShadow">
+          <div
+            class="row align-items-center justify-content-between roomContentContainer"
+          >
+            <div class="col-md p-5 text-light roomContent">
+              <h3 id="elysiumRoom">
+                Elysium Cave Suite with Private Jacuzzi
+                <span>~Caldera View~</span>
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                facilis quia, mollitia laboriosam cum aliquam dignissimos est
+                sunt alias in eveniet nisi animi numquam quae officia, omnis
+                libero, placeat voluptatem. Reiciendis officia pariatur
+                reprehenderit perferendis dolorem exercitationem vel sunt
+                doloribus nostrum asperiores. Soluta, cumque modi.
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                laudantium eius, laboriosam voluptatum nemo repellat molestiae
+                iusto maxime quisquam sunt natus tenetur, quasi vel pariatur
+                reprehenderit dolores.
+              </p>
+
+              <a href="booking/booking.html" class="btn rounded-pill"
+                >Book Now</a
+              >
+            </div>
+
+            <div id="elysiumCarouselSlide" class="carousel slide col-md" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/elysium_room.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/elysium_room_bathroom.jpg" class="img-fluid d-block w-100 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/elysium_room_jacuzzi.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="roomContainer">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5 text-light roomContent">
+              <h3 id="omniRoom">
+                Omni Cave Suite with Private Jacuzzi
+                <span>~Caldera View~</span>
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur cupiditate laboriosam quasi, praesentium cum eligendi
+                sint quisquam nobis. Molestiae dicta ullam quia, iusto
+                provident, adipisci odit temporibus enim, optio vel nostrum.
+                Fuga praesentium, perspiciatis soluta temporibus cumque sint
+                eaque natus, qui atque sapiente nihil modi similique molestias!
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                reprehenderit! Unde error eaque est beatae pariatur tempora ad
+                ab soluta, minima temporibus numquam, aperiam odio dolorum?
+              </p>
+
+              <a href="booking/booking.html" class="btn rounded-pill"
+                >Book Now</a
+              >
+            </div>
+
+            <div id="omniCarouselSlide" class="carousel slide col-md" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/omni_room.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/astral_room_bathroom.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/astral_room_jacuzzi.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="roomContainer boxShadow2">
+          <div
+            class="row align-items-center justify-content-between roomContentContainer"
+          >
+            <div class="col-md p-5 text-light roomContent">
+              <h3 id="divineRoom">
+                Divine Cave Suite with Private Jacuzzi
+                <span>~Caldera View~</span>
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non
+                consequatur hic rerum quod dolorum ipsam totam nihil dolor, quam
+                placeat facilis laborum harum ex, eaque, a inventore? Excepturi
+                culpa nesciunt ipsa, id molestiae a rerum, aspernatur ducimus
+                quas placeat magni. Tempora voluptates consequatur repellat
+                ducimus iusto voluptas quidem dolores delectus nesciunt
+                temporibus fugit, libero illum iste reprehenderit rerum
+                expedita! Quas amet alias nesciunt eius laborum adipisci nulla
+                quo dolor.
+              </p>
+
+              <a href="booking/booking.html" class="btn rounded-pill"
+                >Book Now</a
+              >
+            </div>
+
+            <div id="divineCarouselSlide" class="carousel slide col-md" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/divine_room3.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/divine_room2.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/divine_room.jpg" class="img-fluid d-block w-20 rounded divineRoomImg" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/divine_room_bathroom.jpg" class="img-fluid d-block w-20 rounded divineBathroomImg" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/img/divine_room_jacuzzi.jpg" class="img-fluid d-block w-20 rounded" alt="...">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="restaurant"></section>
+
+      <section id="facillities" class="p-5">
+        <h2 class="facilltiesTittle text-center">Our Facilllities</h2>
+
+        <div class="facillitiesContainer">
+          <div class="row g-5 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-dark bg-opacity-63" id="generalFac">
+                <div class="card-title text-center">General</div>
+                <ul class="card-text">
+                  <li>Adult only</li>
+                  <li>Free WiFi</li>
+                  <li>Free parking</li>
+                  <li>Shuttle service (additional charge)</li>
+                  <li>Car hire</li>
+                  <li>Air conditioning</li>
+                  <li>Heating</li>
+                  <li>Room service</li>
+                  <li>Soundproof rooms</li>
+                  <li>Non-smoking rooms</li>
+                  <li>Designed smoking area</li>
+                  <li>2 swimming pools (outdoor & indoor)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-dark" id="receptionFac">
+                <div class="card-title text-center">Reception services</div>
+                <ul class="card-text">
+                  <li>24-hour Front Desk</li>
+                  <li>Private check-in/check-out</li>
+                  <li>Tour Desk</li>
+                  <li>Luggage storage</li>
+                  <li>Lockers</li>
+                  <li>Invoice provided</li>
+                  <li>Concierge service</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-dark" id="foodDrinkFac">
+                <div class="card-title text-center">Food & Drink</div>
+                <ul class="card-text">
+                  <li>Breakfast in the room</li>
+                  <li>Fruits (additional charge)</li>
+                  <li>Restaurant</li>
+                  <li>Special diet menus (on request)</li>
+                  <li>Bar</li>
+                  <li>Snack bar</li>
+                  <li>Wine/Champagne (additional charge)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-dark" id="wellnessFac">
+                <div class="card-title text-center">Wellness</div>
+                <ul class="card-text">
+                  <li>Fitness/spa locker rooms</li>
+                  <li>Spa/wellness centre (additional charge)</li>
+                  <li>Spa/wellness packages</li>
+                  <li>Spa facilities</li>
+                  <li>Relaxation area</li>
+                  <li>Massage (additional charge)</li>
+                  <li>Massage chair</li>
+                  <li>Sun lounges or beach chairs</li>
+                  <li>Hot tub/Jacuzzi</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-dark" id="cleaningFac">
+                <div class="card-title text-center">Cleaning services</div>
+                <ul class="card-text">
+                  <li>Daily housekeeping</li>
+                  <li>Laundry (additional charge)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-5" id="faq">
+        <h2 class="text-center my-5">FAQs</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What are the rates for each type of room?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show text-light text-center"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <p class="accordion-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                cupiditate odio quia voluptatibus nemo sed corrupti consequatur
+                illum officia obcaecati! Iste consequatur maiores sapiente quam.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Is there coffee provided in each guest room?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse text-light text-center"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <p class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloremque in non odio fugiat iure vel.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                What special menu items do you offer for guests with dietary
+                restrictions?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse text-light text-center"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <p class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur corrupti quis quas repellendus deserunt dolorum
+                cupiditate, repudiandae dolore rem aut magnam porro architecto
+                commodi id recusandae eveniet aliquid magni. Blanditiis, labore
+                repellendus!
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                What is the cancellation policy?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse text-light text-center"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <p class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint a
+                dicta natus odit voluptas culpa modi maxime officia numquam quam
+                sapiente explicabo, enim officiis doloribus facilis sunt
+                voluptatem nisi nobis odio quidem quos molestias totam neque.
+                Cupiditate iste laboriosam quos suscipit facilis?
+                Necessitatibus?
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                I'm arriving on Santorini Island by ferry. How will my luggage
+                get to the hotel?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse text-light text-center"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <p class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Suscipit nemo expedita natus facere minima a exercitationem est
+                autem explicabo. Quidem molestiae aut dolor, nostrum ab dolores
+                voluptatem veritatis.
+              </p>
+
+              <p class="accordion-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                nihil odit esse atque officia tempore voluptatum quos
+                exercitationem ab ea dolore quia adipisci earum, quidem quasi
+                non ipsa animi? Accusamus culpa nobis qui. Necessitatibus error
+                maxime quia similique inventore iure.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                Can I make a reservation for the hotel's restaurant if I'm not a
+                hotel guest?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse text-light text-center"
+              aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample"
+            >
+              <p class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                provident delectus dolor, at, aliquam atque quaerat perferendis
+                accusantium laboriosam distinctio placeat eos rem repellat quae
+                doloremque recusandae non.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer></footer>
+    </main>
+  </body>
+  <script type="text/babel" src="hotel.js"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://unpkg.com/react@18/umd/react.production.min.js"
+    crossorigin
+  ></script>
+  <script
+    src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    crossorigin
+  ></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</html>

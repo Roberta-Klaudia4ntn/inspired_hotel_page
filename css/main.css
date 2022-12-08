@@ -1,0 +1,537 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: var(--viewport-height);
+  line-height: 1;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+body:before {
+  width: 100vw;
+  height: var(--background-height);
+  z-index: 0;
+  pointer-events: none;
+  background-attachment: scroll;
+  background-image: url();
+  background-size: 512px, cover;
+  background-position: center, top;
+  background-repeat: repeat, repeat;
+  background-color: rgb(255, 255, 255);
+}
+
+body:after {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(8, 8, 8);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease-in-out 0s, visibility 1.5s 0s;
+}
+
+body:before,
+body:after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  font-family: "Cinzel", serif;
+  position: fixed;
+  z-index: 150;
+  width: 100rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0.17rem 0.47rem 5rem 0.25rem;
+}
+
+main {
+  background-color: rgb(33, 37, 41);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact:hover {
+  color: rgb(206, 212, 218);
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.dropdownItem,
+.dropdownItemFac {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 10%;
+  background-color: rgba(33, 37, 41);
+  box-shadow: rgba(0, 0, 0, 0.17) 0.17rem 0.47rem 5rem 0.25rem;
+}
+.dropdownItem {
+  right: 26.3rem;
+}
+
+.dropdownItemFac {
+  right: 13.9rem;
+}
+
+.dropdownItem a, .dropdownItemFac a {
+  background-color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    rgba(66, 179, 152, 0.63) 15%,
+    transparent 100%
+  );
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.dropdownItem a:hover, .dropdownItemFac a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(129, 66, 179, 0.63);
+}
+
+.astralRoom {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1.3rem;
+}
+
+.elysiumRoom {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.95rem;
+}
+
+.omniRoom {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1.55rem;
+}
+
+.divineRoom {
+  padding: 0.5rem 1.24rem;
+}
+
+.generalFac {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 3.7rem;
+}
+
+.receptionFac {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.foodDrinkFac {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 2.4rem;
+}
+
+.wellnessFac {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 3.6rem;
+}
+
+.cleaningFac {
+  padding: 0.5rem 1.18rem;
+}
+
+.coverSection {
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1280x900/352159180.jpg?k=d2064048e389f2e849ebe0acf462b3c34681c98ef7a9212cff676f9d6ca37938&o=&hp=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15rem 30rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+  z-index: -2;
+  transform: scale(1);
+}
+
+.coverSection::before {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  background-image: url(#placeholder),
+    linear-gradient(to top, rgba(54, 54, 54, 0.753), rgba(54, 54, 54, 0.753)),
+    url(blob:https://carrd.co/89dd0e6b-2162-4aac-88fb-4458892ec3be);
+  background-size: 256px, auto, cover;
+  background-position: center center, 0% 0%, center center;
+  background-repeat: repeat, repeat, no-repeat;
+  background-color: rgba(255, 255, 255, 0.099);
+}
+
+.coverSectionContainer {
+  width: 40rem;
+  padding: 3.5rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+  bottom: 5em;
+  z-index: 1;
+}
+
+.coverSectionContainer > h1,
+.coverSectionContainer > a,
+.roomContent > a {
+  font-family: "Cinzel", serif;
+  color: rgb(255, 255, 255);
+  margin-top: 2rem;
+}
+
+.coverSectionContainer > h1 {
+  letter-spacing: 0.2rem;
+  font-size: 3em;
+  line-height: 1.375;
+  font-weight: 500;
+  text-shadow: rgba(0, 0, 0, 0.57) 0.25rem 0.28rem 0.625rem;
+}
+
+.coverSectionContainer > h1::before {
+  content: " ";
+  width: 4em;
+  height: 1px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  bottom: 7em;
+  left: 3.8em;
+  z-index: -1;
+}
+
+.coverSectionContainer > p {
+  font-family: "Zilla Slab", serif;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  text-shadow: rgba(0, 0, 0, 0.57) 0.04rem 0.12rem 1.25rem;
+  margin-top: 2rem;
+}
+
+.coverSectionContainer > a,
+.roomContent > a {
+  display: inline-block;
+  width: 15rem;
+  height: 3.25rem;
+  line-height: 3.25rem;
+  padding: 0px 0.5rem 0px 0.775rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.275rem;
+  font-size: 0.75em;
+  font-weight: 400;
+  color: rgb(206, 212, 218);
+  border: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.57) 0.17rem 0.47rem 5rem 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    rgba(66, 179, 152, 0.63) 15%,
+    transparent 100%
+  );
+}
+
+.coverSectionContainer > a:hover,
+.roomContent > a:hover {
+  background-color: rgba(129, 66, 179, 0.63);
+}
+
+.coverSectionIcons {
+  width: 70%;
+  font-size: 1.25em;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  margin-top: 2rem;
+}
+
+.icon {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    rgba(66, 179, 152, 0.63) 15%,
+    transparent 100%
+  );
+}
+
+.icon:hover {
+  background-color: rgba(129, 66, 179, 0.63) !important;
+}
+
+.bookingAppSvg {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  padding-top: 0.3rem;
+}
+
+.bookingAppSvg:hover {
+  color: rgb(255, 255, 255);
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+  fill: rgb(255, 255, 255);
+}
+
+.aboutSection {
+  color: rgb(206, 212, 218);
+  margin: 8rem 11.5rem;
+}
+
+.aboutSectionContent {
+  flex-direction: column;
+  position: relative;
+  width: 70rem;
+  height: 15rem;
+}
+
+.aboutSectionContent > h3 {
+  font-family: "Cinzel", serif;
+  padding-bottom: 1.5rem;
+  z-index: 5;
+}
+
+.aboutSectionContent > h3::before {
+  content: " ";
+  width: 4em;
+  height: 1px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  bottom: 6.5em;
+  left: 18em;
+  z-index: -1;
+}
+
+.aboutSectionContentText {
+  padding: 2rem;
+  width: 80rem;
+  height: 20rem;
+  /* background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 25px; */
+}
+
+.aboutSectionContentText > p {
+  font-family: "Zilla Slab", serif;
+  font-size: 19px;
+  text-align: justify;
+  z-index: 5;
+}
+
+/* .aboutSectionContentDecor1 {
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(45deg, rgba(66, 179, 152, 0.63) 15%, transparent 100%);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up 2s ease-in infinite alternate-reverse;
+  top: 10rem;
+  left: -9.5rem;
+}
+
+.aboutSectionContentDecor2 {
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(45deg, rgba(66, 179, 152, 0.63) 15%, transparent 100%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3rem;
+  right: -8rem;
+  animation: move-down 2s ease-in infinite alternate-reverse;
+}
+
+@keyframes move-up {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down {
+  to {
+    transform: translateY(10px);
+  }
+} */
+
+/* #rooms {
+  background-color: rgba(179, 153, 66, 0.23);
+} */
+
+#rooms > h2 {
+  color: rgb(206, 212, 218);
+  text-align: center;
+  font-family: "Cinzel", serif;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+#rooms > h2::before {
+  content: " ";
+  width: 4em;
+  height: 1px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 53.3em;
+  left: 21.6em;
+  z-index: 100;
+}
+
+.roomContainer {
+  padding: 2rem;
+  margin: 3rem 2rem;
+  height: 35rem;
+}
+
+.boxShadow {
+  box-shadow: 0px -550px 70px rgba(252, 223, 191, 0.3);
+}
+
+.boxShadow2 {
+  box-shadow: 0px -560px 70px rgba(252, 223, 191, 0.3);
+}
+
+.roomContentContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.roomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roomContent > p {
+  font-family: "Zilla Slab", serif;
+  text-align: justify;
+}
+
+#astralRoom,
+#elysiumRoom,
+#omniRoom,
+#divineRoom {
+  font-family: "Cinzel", serif;
+  color: rgb(206, 212, 218);
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.carousel-item {
+  transition: transform 1s ease, opacity .5s ease-out;
+}
+
+.divineRoomImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divineBathroomImg {
+  width: 100rem;
+}
+
+/* #facillities {
+  box-shadow: 0px -1190px 80px rgba(252, 223, 191, 0.3);
+} */
+
+.facillitiesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.facilltiesTittle {
+  font-family: "Cinzel", serif;
+  color: rgb(206, 212, 218);
+  padding-bottom: 2rem;
+  z-index: 5;
+}
+
+.facilltiesTittle::before {
+  content: " ";
+  width: 4em;
+  height: 1px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 127.6em;
+  left: 21.7em;
+  z-index: 1;
+}
+
+.card {
+  color: rgb(206, 212, 218);
+  padding: 1rem;
+  font-size: 17px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.404);
+}
+
+#cleaningFac {
+  margin-top: -10.5rem;
+}
+
+.card-title {
+  font-family: "Cinzel", serif;
+  padding-bottom: 0.7rem;
+}
+
+.card-text {
+  font-family: "Zilla Slab", serif;
+  list-style-image: url(/Roberta_Klaudia/JavaScript_Exercises/Hotel_page/assets/svg/leaf-solid.svg);
+  padding-left: 1rem;
+}
+
+#faq {
+  color: rgb(206, 212, 218);
+  font-family: "Cinzel", serif;
+  width: 65rem;
+  margin-left: 15rem;
+}
+
+.accordion-item {
+  font-family: "Zilla Slab", serif;
+}
+
+.accordion-collapse {
+  color: rgb(206, 212, 218);
+}
+/*# sourceMappingURL=main.css.map */ /*# sourceMappingURL=main.css.map */

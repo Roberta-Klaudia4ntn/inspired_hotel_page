@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Klaudia</title>
+    <link rel="stylesheet" href="booking.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Zilla+Slab:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Hotel Klaudia</h1>
+    <h3>Book a room</h3>
+    <form>
+      <div class="travelPurposeField">
+        <p>Are you traveling for work?</p>
+        <div class="travelPurposeOptions">
+          <div>
+            <input type="checkbox" id="travelPurpose1" />
+            <label for="travelPurpose1">Yes</label>
+          </div>
+          <div>
+            <input type="checkbox" id="travelPurpose2" />
+            <label for="travelPurpose2">No</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="fullNameField">
+        <label for="fullName">Full Name</label>
+        <div>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="enter your first name"
+          />
+          <input type="text" id="fullName" placeholder="enter your last name" />
+        </div>
+      </div>
+
+      <div class="emailField">
+        <label for="emailFrom">Email Address</label>
+        <input type="email" id="emailFrom" placeholder="example@example.com" />
+      </div>
+
+      <div class="phoneField">
+        <label for="phoneForm">Phone Number</label>
+        <input
+          type="tel"
+          id="phoneForm"
+          placeholder="enter your phone number"
+        />
+      </div>
+
+      <div class="guestField">
+        <label for="guestNumForm">Guest Number</label>
+        <input type="number" id="guestNumForm" min="1" max="6" />
+      </div>
+
+      <div class="bookingDatesField">
+        <div class="bookingDateMiniField1">
+          <label for="checkInDate">Check-in</label>
+          <input type="date" id="checkInDate" />
+        </div>
+        <div class="bookingDateMiniField2">
+          <label for="checkOutDate">Check-out</label>
+          <input type="date" id="checkOutDate" />
+        </div>
+      </div>
+
+      <div class="roomTypeField">
+        <label for="roomType">Room Type</label>
+        <select id="roomType">
+          <option value="Astral Cave">
+            Astral Cave Suite with Private Jacuzzi - Caldera View
+          </option>
+          <option value="Elysium Cave">
+            Elysium Cave Suite with Private Jacuzzi - Caldera View
+          </option>
+          <option value="Omni Cave">
+            Omni Cave Suite with Private Jacuzzi - Caldera View
+          </option>
+          <option value="Divine Cave">
+            Divine Cave Suite with Private Jacuzzi - Caldera View
+          </option>
+        </select>
+      </div>
+
+      <div class="transportField">
+        <p>Add To You Stay</p>
+        <div class="transportFacilitiesOptions">
+          <div>
+            <input type="checkbox" id="airportShuttle" />
+            <label for="airportShuttle"
+              >I'm interested in requesting an airport shuttle</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" id="rentCar" />
+            <label for="rentCar">I'm interested in renting a car</label>
+          </div>
+          <div>
+            <input type="checkbox" id="freeParking" />
+            <label for="freeParking"
+              >I'd like free private parking on site</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="requestsField">
+        <label for="requestsField">Special Requests</label>
+        <textarea id="requestsField"></textarea>
+      </div>
+
+      <input type="submit" value="Book now" />
+    </form>
+  </body>
+  <script src="booking.js"></script>
+</html>

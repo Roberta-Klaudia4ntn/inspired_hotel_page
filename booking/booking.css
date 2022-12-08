@@ -1,0 +1,226 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: var(--viewport-height);
+  line-height: 1;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1280x900/377801615.jpg?k=ae64f247f2b60fbd44db757d1accc59d672ee95ba0199dd3aef8a7d9a2ac118a&o=&hp=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 20rem;
+  color: rgb(255, 255, 255);
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+body:before,
+body:after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 3rem 20rem;
+}
+
+body:before {
+  width: 100%;
+  height: 1067.5px;
+  position: absolute;
+  z-index: -1;
+  background-image: url(#placeholder),
+    linear-gradient(to top, rgba(54, 54, 54, 0.753), rgba(54, 54, 54, 0.753)),
+    url(blob:https://carrd.co/89dd0e6b-2162-4aac-88fb-4458892ec3be);
+  background-size: 320px, auto, cover;
+  background-position: center center, 0% 0%, center center;
+  background-repeat: repeat, repeat, no-repeat;
+  background-color: rgba(255, 255, 255, 0.099);
+}
+
+body:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(8, 8, 8);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease-in-out 0s, visibility 1.5s 0s;
+}
+
+h1,
+h3 {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.2rem;
+  font-size: 3em;
+  line-height: 0.1;
+  font-weight: 500;
+  text-shadow: rgb(0 0 0 / 57%) 0.25rem 0.28rem 0.625rem;
+}
+
+h3 {
+  font-size: 2.5em;
+  margin-bottom: 5rem;
+}
+
+h1::before {
+  content: " ";
+  width: 4em;
+  height: 1px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  bottom: 12.2em;
+  left: 13.8em;
+  z-index: -1;
+}
+
+p,
+label,
+input,
+select,
+textarea {
+  font-family: "Zilla Slab", serif;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  text-shadow: rgb(0 0 0 / 57%) 0.04rem 0.12rem 1.25rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  box-shadow: rgb(0 0 0 / 57%) 0.17rem 0.47rem 5rem 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="submit"],
+select,
+textarea {
+  width: 16rem;
+  height: 2.25rem;
+  line-height: 3.25rem;
+  padding: 0px 0.5rem 0px calc(0.775rem);
+  vertical-align: middle;
+  letter-spacing: 0.275rem;
+  font-size: 0.75em;
+  font-weight: 400;
+  border-radius: 50px;
+  box-shadow: rgb(0 0 0 / 57%) 0.17rem 0.47rem 5rem 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    rgba(66, 179, 152, 0.63) 15%,
+    transparent 100%
+  );
+  color: rgb(255, 255, 255);
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+input[type="number"] {
+  width: 4rem;
+}
+
+input[type="submit"] {
+  font-family: "Cinzel", serif;
+  margin-top: 2rem;
+  display: inline-block;
+  width: 15rem;
+  height: 3.25rem;
+  text-transform: uppercase;
+  margin-left: 30%;
+  border: rgb(255, 255, 255);
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(129, 66, 179, 0.63);
+}
+
+select {
+  width: 34rem;
+}
+
+.travelPurposeOptions,
+.fullNameField,
+.emailField,
+.phoneField,
+.guestField,
+.bookingDatesField,
+.roomTypeField,
+.transportField {
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+option {
+  color: rgb(0, 0, 0);
+}
+
+.travelPurposeOptions > div {
+  margin: 0 1rem;
+}
+
+.fullNameField > div {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.bookingDatesField {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bookingDateMiniField2 {
+  margin-top: 0.5rem;
+}
+
+#fullName,
+#phoneForm {
+  margin-left: 1rem;
+}
+
+#emailFrom,
+#guestNumForm {
+  margin-left: 1.15rem;
+}
+
+#checkInDate {
+  margin-left: 3.4rem;
+}
+
+#checkOutDate {
+  margin-left: 2.8rem;
+}
+
+#roomType {
+  margin-left: 2.6rem;
+}
+
+.transportField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
